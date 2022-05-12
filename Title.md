@@ -326,38 +326,9 @@ ggdag_status(tidy_dag, layout = "nicely") + scale_color_manual(values = c("tan",
 
 # Statistical Model
 
-The joint likelihood model included a binomial distribution for survey
-locations and a gamma distribution for density (grasshoppers per square
-meter).
-
-To bivariate response variable was coded such that human observation of
-grasshoppers (field survey) approximated sampling probability, with
-
-By comparison, the response variable’s second column followed a Gamma
-distribution with the grasshopper density estimate used when the
-location was surveyed and all other values truncated (removed),
-
-Each part of the bivariate response was linked to a dedicated regression
-component. The observation process included an intercept
-(![\\alpha\_{1}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Calpha_%7B1%7D "\alpha_{1}")),
-a spatiotemporal random effect following an order-1 autoregressive prior
-(![\\zeta\_{\\textit{st}}^{1}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Czeta_%7B%5Ctextit%7Bst%7D%7D%5E%7B1%7D "\zeta_{\textit{st}}^{1}")),
-an effect to capture location specific variability
-(![\\varphi\_{s}^1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cvarphi_%7Bs%7D%5E1 "\varphi_{s}^1")),
-and a shared spatiotemporal process
-(![\\textit{S}\_{\\textit{st}}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Ctextit%7BS%7D_%7B%5Ctextit%7Bst%7D%7D "\textit{S}_{\textit{st}}"))
-to control for correlation between the two model levels. The coefficient
-![\\lambda](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Clambda "\lambda")
-serves as a scaler to qunatify the strength of between tier correlation.
-This can be generalized as,
-
-The density level of the model similarly included an intercept,
-spatiotemporal effect for latencies, and a random effect to quantify
-variation at the level of the location. Additionally, sampling effort
-(Effort) was considered, other environmental factors
-(![\\beta\_{2}X\_{st}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cbeta_%7B2%7DX_%7Bst%7D "\beta_{2}X_{st}")),
-and temporarily dynamic SVCs
-(![\\sum\_{k}^{m} \\textit{f} \\hspace{0.1cm} (\\xi\_{k\\textit{st}} \\hspace{0.1cm} SVC\_{kst}))](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Csum_%7Bk%7D%5E%7Bm%7D%20%5Ctextit%7Bf%7D%20%5Chspace%7B0.1cm%7D%20%28%5Cxi_%7Bk%5Ctextit%7Bst%7D%7D%20%5Chspace%7B0.1cm%7D%20SVC_%7Bkst%7D%29%29 "\sum_{k}^{m} \textit{f} \hspace{0.1cm} (\xi_{k\textit{st}} \hspace{0.1cm} SVC_{kst}))")).
+Still working to figure-out how rendering LaTeX math-stat notation works
+on GitHub… Formulas and interactive tables are available with the full
+html at RPubs: <https://rpubs.com/JMHumphreys/asynchrony>
 
 # Organize Data
 
