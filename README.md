@@ -27,10 +27,12 @@ on high-performance computers using 24 CPUs at 40GB memory, as well as,
 licensed PARDISO solver software ([Verbosio et al. 2017](#ref-Pardiso1);
 [Kourounis, Fuchs, and Schenk 2018](#ref-Pardiso2)).
 
-For full description of the study, please see the associated article:  
-**Humphreys JM, Srygley RB, Lawton D, Hudson A, and Branson DH, 2022.
+For full description of the study, please see the associated article:
+
+**Humphreys JM, Srygley RB, Lawton D, Hudson A, and Branson DH (2022).
 Grasshoppers Exhibit Asynchrony and Spatial Non-Stationarity in Response
-to the El Nino/Southern and Pacific Decadal Oscillations (in review)**
+to the El Nino/Southern and Pacific Decadal Oscillations.
+Ecological Modeling, 471, https://doi.org/10.1016/j.ecolmodel.2022.110043**
 
 For data and code to run this analysis, please see the project Open
 Science Framework website: <https://osf.io/dmyhf/>
